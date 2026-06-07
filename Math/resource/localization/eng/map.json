@@ -1,0 +1,18 @@
+{
+  "MATH_MAP_ODDS.PREDICTION_TITLE": "Odds Preview",
+  "MATH_MAP_ODDS.UNKNOWN.ENCOUNTER_CHANCE": "Current ? combat chance: {Chance}",
+  "MATH_MAP_ODDS.UNKNOWN.MONSTER_CHANCE": "Normal enemy: {Chance}",
+  "MATH_MAP_ODDS.UNKNOWN.ELITE_CHANCE": "Elite: {Chance}",
+  "MATH_MAP_ODDS.UNKNOWN.EVENT_LABEL": "Event",
+  "MATH_MAP_ODDS.UNKNOWN.SHOP_LABEL": "Shop",
+  "MATH_MAP_ODDS.UNKNOWN.TREASURE_LABEL": "Treasure",
+  "MATH_MAP_ODDS.UNKNOWN.OTHER_OUTCOME": "{Label} {Chance}",
+  "MATH_MAP_ODDS.UNKNOWN.OUTCOME_SEPARATOR": " / ",
+  "MATH_MAP_ODDS.UNKNOWN.TUTORIAL_FIRST_TWO": "Current ? combat chance: 0%\nTutorial protection: the first two ? rooms are fixed to events.",
+  "MATH_MAP_ODDS.UNKNOWN.TUTORIAL_THIRD": "Current ? combat chance: 100%\nTutorial script: the third ? room is forced to be a combat.",
+  "MATH_MAP_ODDS.POTION.CURRENT_CHANCE": "Current potion drop chance: {Chance}",
+  "MATH_MAP_ODDS.POTION.FORCED_DROP": "A forced potion drop effect is active right now.",
+  "MATH_MAP_ODDS.POTION.FORCED_DROP_NOTE": "After this fight, the base drop chance still changes by the normal rules.",
+  "MATH_MAP_ODDS.POTION.ELITE_BONUS": "Base {BaseChance} + elite bonus {BonusChance}",
+  "MATH_MAP_ODDS.POTION.NEXT_BASE": "Next base chance → {OnDrop} on drop, → {OnMiss} on miss"
+}

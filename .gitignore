@@ -1,0 +1,7 @@
+.DS_Store
+.godot/
+.rvinspect/
+bin/
+obj/
+packages/
+RandomVisionBuild/

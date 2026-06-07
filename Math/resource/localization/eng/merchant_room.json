@@ -1,0 +1,18 @@
+{
+  "MATH_MERCHANT.SUMMARY.TITLE": "Shopping Summary",
+  "MATH_MERCHANT.SUMMARY.DRAG_HINT": "Drag the title bar to move",
+  "MATH_MERCHANT.SUMMARY.EMPTY_HINT": "Middle-click cards, potions, relics, or card removal in the shop to show the purchase summary here.\nIf Membership Card is selected, the summary automatically prices it first for the cheapest total.",
+  "MATH_MERCHANT.SUMMARY.MEMBERSHIP_PRIORITIZED": "Using the cheapest order: Membership Card is treated as the first purchase.",
+  "MATH_MERCHANT.SUMMARY.ITEM_LINE": "{Order}. {Name}: {Price}{Suffix}",
+  "MATH_MERCHANT.SUMMARY.ITEM_SUFFIX.PRIORITIZED": " (moved first)",
+  "MATH_MERCHANT.SUMMARY.ITEM_SUFFIX.MEMBERSHIP_PRICE": " (member price)",
+  "MATH_MERCHANT.SUMMARY.CURRENT_GOLD": "Current Gold: {Gold}",
+  "MATH_MERCHANT.SUMMARY.TOTAL_COST": "Total Cost: {Cost}",
+  "MATH_MERCHANT.SUMMARY.CAN_AFFORD": "Can Afford: {Value}",
+  "MATH_MERCHANT.SUMMARY.REMAINING_GOLD": "Gold After Purchase: {Gold}",
+  "MATH_MERCHANT.SUMMARY.AFFORD.YES": "Yes",
+  "MATH_MERCHANT.SUMMARY.AFFORD.NO": "No",
+  "MATH_MERCHANT.ITEM.CARD": "Card {Name}",
+  "MATH_MERCHANT.ITEM.POTION": "Potion {Name}",
+  "MATH_MERCHANT.ITEM.RELIC": "Relic {Name}"
+}
