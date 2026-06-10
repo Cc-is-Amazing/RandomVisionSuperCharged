@@ -3,9 +3,9 @@ using Godot;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Nodes.Events;
-using RandomVision.Services;
+using RandomVisionSuperCharged.Services;
 
-namespace RandomVision.Patches;
+namespace RandomVisionSuperCharged.Patches;
 
 [HarmonyPatch(typeof(NEventLayout))]
 internal static class EventLayoutPreviewPatch
@@ -18,7 +18,7 @@ internal static class EventLayoutPreviewPatch
     [HarmonyPatch(nameof(NEventLayout.ClearOptions))]
     private static void AfterClearOptions(NEventLayout __instance)
     {
-        RandomVisionEventOverlay.Remove(__instance);
+        RandomVisionSuperChargedEventOverlay.RefreshOrRemoveDeferred(__instance, EventRef(__instance), "clear-options");
     }
 
     [HarmonyPostfix]
@@ -28,7 +28,7 @@ internal static class EventLayoutPreviewPatch
     {
         try
         {
-            RandomVisionEventOverlay.AttachOrRefresh(__instance, EventRef(__instance));
+            RandomVisionSuperChargedEventOverlay.AttachOrRefresh(__instance, EventRef(__instance));
         }
         catch (Exception ex)
         {

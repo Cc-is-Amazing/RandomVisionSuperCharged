@@ -3,9 +3,9 @@ using Godot;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Nodes.Rooms;
-using RandomVision.Services;
+using RandomVisionSuperCharged.Services;
 
-namespace RandomVision.Patches;
+namespace RandomVisionSuperCharged.Patches;
 
 [HarmonyPatch(typeof(NEventRoom), "SetOptions")]
 internal static class EventRoomPreviewPatch
@@ -37,6 +37,6 @@ internal static class EventRoomPreviewPatch
             return;
         }
 
-        RandomVisionEventOverlay.AttachOrRefresh(layout, eventModel);
+        RandomVisionSuperChargedEventOverlay.AttachOrRefresh(layout, eventModel);
     }
 }

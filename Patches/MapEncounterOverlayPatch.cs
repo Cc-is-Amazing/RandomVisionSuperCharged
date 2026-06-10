@@ -2,9 +2,9 @@ using System.Reflection;
 using Godot;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Nodes.Screens.Map;
-using RandomVision.Services;
+using RandomVisionSuperCharged.Services;
 
-namespace RandomVision.Patches;
+namespace RandomVisionSuperCharged.Patches;
 
 internal static class MapEncounterOverlayDiagnostics
 {
@@ -57,7 +57,7 @@ internal static class MapEncounterOverlayPatch
     private static void AfterClose(NMapScreen __instance)
     {
         MainFile.LogInfo($"map-encounter Close postfix is-open={__instance.IsOpen}");
-        RandomVisionMapEncounterOverlay.Remove(__instance);
+        RandomVisionSuperChargedMapEncounterOverlay.Remove(__instance);
     }
 
     private static void ScheduleRefresh(NMapScreen screen, string source)
@@ -82,6 +82,6 @@ internal static class MapEncounterOverlayPatch
         }
 
         MainFile.LogInfo($"map-encounter refresh source={source} is-open={screen.IsOpen} visible={screen.Visible}");
-        RandomVisionMapEncounterOverlay.AttachOrRefresh(screen);
+        RandomVisionSuperChargedMapEncounterOverlay.AttachOrRefresh(screen);
     }
 }

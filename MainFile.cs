@@ -2,25 +2,26 @@ using System;
 using Godot;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Modding;
-using RandomVision.Patches;
-using RandomVision.Services;
+using RandomVisionSuperCharged.Patches;
+using RandomVisionSuperCharged.Services;
 
-namespace RandomVision;
+namespace RandomVisionSuperCharged;
 
 [ModInitializer(nameof(Initialize))]
 public partial class MainFile : Node
 {
-    public const string ModId = "RandomVision";
+    public const string ModId = "RandomVisionSuperCharged";
 
     public static void Initialize()
     {
         GD.Print($"{ModId}: initializing");
-        RandomVisionI18n.Initialize();
+        RandomVisionSuperChargedI18n.Initialize();
 
         var harmony = new Harmony(ModId);
         harmony.PatchAll(typeof(MainFile).Assembly);
         OrderedDrawPileDiagnostics.LogPatchStatus();
         MapEncounterOverlayDiagnostics.LogPatchStatus();
+        RngRefreshDiagnostics.LogPatchStatus();
     }
 
     public static void LogInfo(string message)

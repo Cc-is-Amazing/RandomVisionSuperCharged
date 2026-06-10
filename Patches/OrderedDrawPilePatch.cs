@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Nodes.Screens;
 using MegaCrit.Sts2.Core.Nodes.Screens.Capstones;
 using MegaCrit.Sts2.Core.Nodes.Screens.CardLibrary;
 
-namespace RandomVision.Patches;
+namespace RandomVisionSuperCharged.Patches;
 
 internal static class OrderedDrawPileDiagnostics
 {

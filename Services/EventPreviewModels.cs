@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using MegaCrit.Sts2.Core.Events;
 using MegaCrit.Sts2.Core.HoverTips;
 
-namespace RandomVision.Services;
+namespace RandomVisionSuperCharged.Services;
 
 internal enum PreviewCoverage
 {

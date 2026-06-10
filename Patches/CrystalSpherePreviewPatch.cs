@@ -2,9 +2,9 @@ using System;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Events.Custom.CrystalSphereEvent;
 using MegaCrit.Sts2.Core.Nodes.Events.Custom.CrystalSphere;
-using RandomVision.Services;
+using RandomVisionSuperCharged.Services;
 
-namespace RandomVision.Patches;
+namespace RandomVisionSuperCharged.Patches;
 
 [HarmonyPatch(typeof(NCrystalSphereScreen))]
 internal static class CrystalSpherePreviewPatch
@@ -18,7 +18,7 @@ internal static class CrystalSpherePreviewPatch
     {
         try
         {
-            RandomVisionCrystalPreview.AttachIfNeeded(__instance, EntityRef(__instance));
+            RandomVisionSuperChargedCrystalPreview.AttachIfNeeded(__instance, EntityRef(__instance));
         }
         catch (Exception ex)
         {
@@ -32,7 +32,7 @@ internal static class CrystalSpherePreviewPatch
     {
         try
         {
-            RandomVisionCrystalPreview.Remove(__instance);
+            RandomVisionSuperChargedCrystalPreview.Remove(__instance);
         }
         catch (Exception ex)
         {
