@@ -31,3 +31,8 @@ dotnet publish RandomVisionSuperCharged.csproj -c Release -p:ModOutputDir=/path/
 - If an event happened in prior act, then it won't trigger again.
 - In multiplayer game, prediction refresh will prevent player from scrolling event prediction list down.
 - Neow's Bone (and others): Upon pick up/selection, RNG is consumed and due to prediction auto refresh mech, it will refresh to the next RNG prediction (instead of staying the same)
+- Add full support for multiplayer RNG predictor.
+- Add shop preview
+- Add Silken Tare preview
+- Add act 2 and act 3 ancient option preview
+- Lost Coffer potion preview error
